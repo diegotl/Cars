@@ -10,13 +10,25 @@ protocol ICarsListView: class {
 
 }
 
+protocol CarsListDelegate: class {
+    func presentCarDetails(_ car: Car)
+}
+
 protocol ICarsListPresenter {
     var cars: [Car] { get }
+    
+    func openItem(at index: Int)
 }
 
 struct CarsListPresenter: ICarsListPresenter {
 
     private(set) weak var view: ICarsListView?
+    private(set) weak var delegate: CarsListDelegate?
     let cars: [Car]
+    
+    func openItem(at index: Int) {
+        let car = cars[index]
+        delegate?.presentCarDetails(car)
+    }
 
 }

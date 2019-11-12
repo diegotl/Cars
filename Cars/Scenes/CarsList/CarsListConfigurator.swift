@@ -12,10 +12,11 @@ protocol ICarsListConfigurator {
 
 struct CarsListConfigurator: ICarsListConfigurator {
     
+    private(set) weak var delegate: CarsListDelegate?
     let cars: [Car]
     
     func configure(_ viewController: CarsListViewController) {
-        viewController.presenter = CarsListPresenter(view: viewController, cars: cars)
+        viewController.presenter = CarsListPresenter(view: viewController, delegate: delegate, cars: cars)
     }
     
 }

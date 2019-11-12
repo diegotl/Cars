@@ -65,40 +65,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="110" id="VkY-gT-4Se" customClass="CarCell" customModule="Cars" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="90" id="VkY-gT-4Se" customClass="CarCell" customModule="Cars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VkY-gT-4Se" id="FNY-I2-f0A">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-du-ETE" customClass="CacheImageView" customModule="Cars" customModuleProvider="target">
-                                            <rect key="frame" x="265" y="0.0" width="110" height="110"/>
+                                            <rect key="frame" x="285" y="0.0" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="110" id="6sg-O5-QoT"/>
+                                                <constraint firstAttribute="width" constant="90" id="6sg-O5-QoT"/>
                                                 <constraint firstAttribute="width" secondItem="aeJ-du-ETE" secondAttribute="height" multiplier="1:1" id="kTQ-3t-1Eg"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRd-fE-Iab">
-                                            <rect key="frame" x="8" y="8" width="35.5" height="17"/>
+                                            <rect key="frame" x="16" y="20" width="35.5" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-om-1Se">
-                                            <rect key="frame" x="8" y="27" width="46" height="21.5"/>
-                                            <color key="backgroundColor" name="MainColor"/>
+                                            <rect key="frame" x="16" y="41" width="46" height="21.5"/>
+                                            <color key="backgroundColor" name="ModelBg"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="ModelText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" name="CellBg"/>
                                     <constraints>
-                                        <constraint firstItem="xRd-fE-Iab" firstAttribute="top" secondItem="FNY-I2-f0A" secondAttribute="top" constant="8" id="1GN-iL-6zP"/>
-                                        <constraint firstItem="xRd-fE-Iab" firstAttribute="leading" secondItem="FNY-I2-f0A" secondAttribute="leading" constant="8" id="2nQ-cv-fZy"/>
+                                        <constraint firstItem="xRd-fE-Iab" firstAttribute="leading" secondItem="FNY-I2-f0A" secondAttribute="leading" constant="16" id="2nQ-cv-fZy"/>
+                                        <constraint firstItem="5tc-om-1Se" firstAttribute="centerY" secondItem="FNY-I2-f0A" secondAttribute="centerY" multiplier="1.15" id="5Sd-Q8-Pel"/>
                                         <constraint firstAttribute="trailing" secondItem="aeJ-du-ETE" secondAttribute="trailing" id="AFP-en-H7S"/>
-                                        <constraint firstItem="5tc-om-1Se" firstAttribute="top" secondItem="xRd-fE-Iab" secondAttribute="bottom" constant="2" id="V3D-03-7Hw"/>
-                                        <constraint firstItem="5tc-om-1Se" firstAttribute="leading" secondItem="FNY-I2-f0A" secondAttribute="leading" constant="8" id="VOp-Hm-jKz"/>
+                                        <constraint firstItem="5tc-om-1Se" firstAttribute="top" secondItem="xRd-fE-Iab" secondAttribute="bottom" constant="4" id="V3D-03-7Hw"/>
+                                        <constraint firstItem="5tc-om-1Se" firstAttribute="leading" secondItem="FNY-I2-f0A" secondAttribute="leading" constant="16" id="VOp-Hm-jKz"/>
                                         <constraint firstAttribute="bottom" secondItem="aeJ-du-ETE" secondAttribute="bottom" priority="999" id="XU6-o9-dw6"/>
                                         <constraint firstItem="aeJ-du-ETE" firstAttribute="top" secondItem="FNY-I2-f0A" secondAttribute="top" id="unX-mL-3GB"/>
                                     </constraints>
@@ -154,8 +155,14 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="MainColor">
-            <color red="0.99609321360000003" green="0.36864560839999999" blue="0.00024502605080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="CellBg">
+            <color red="0.99599999189376831" green="0.36899998784065247" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ModelBg">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ModelText">
+            <color red="0.99599999189376831" green="0.36899998784065247" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

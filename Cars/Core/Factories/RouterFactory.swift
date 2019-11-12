@@ -10,7 +10,7 @@ import UIKit
 
 protocol IRouterFactory {
     func createCarsMapViewRouter() -> ICarsMapViewRouter
-    func createCarsListViewRouter() -> ICarsListViewRouter
+    func createCarsListViewRouter(delegate: CarsListDelegate?) -> ICarsListViewRouter
     func createCarDetailsViewRouter() -> ICarDetailsViewRouter
 }
 
@@ -23,8 +23,8 @@ struct RouterFactory: IRouterFactory {
         return CarsMapViewRouter()
     }
     
-    func createCarsListViewRouter() -> ICarsListViewRouter {
-        return CarsListViewRouter(parent: parent)
+    func createCarsListViewRouter(delegate: CarsListDelegate?) -> ICarsListViewRouter {
+        return CarsListViewRouter(parent: parent, delegate: delegate)
     }
     
     func createCarDetailsViewRouter() -> ICarDetailsViewRouter {

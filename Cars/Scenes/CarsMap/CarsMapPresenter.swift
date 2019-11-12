@@ -20,14 +20,14 @@ protocol ICarsMapPresenter {
     func presentCarDetails(_ car: Car)
 }
 
-class CarsMapPresenter: ICarsMapPresenter {
+class CarsMapPresenter: ICarsMapPresenter, CarsListDelegate {
 
     private weak var view: ICarsMapView?
     private let useCaseFactory: IUseCaseFactory
     private let routerFactory: IRouterFactory
     
     private lazy var listCarsUseCase: IListCarsUseCase = useCaseFactory.createListCarsUseCase()
-    private lazy var carsListViewRouter: ICarsListViewRouter = routerFactory.createCarsListViewRouter()
+    private lazy var carsListViewRouter: ICarsListViewRouter = routerFactory.createCarsListViewRouter(delegate: self)
     private lazy var carDetailsViewRouter: ICarDetailsViewRouter = routerFactory.createCarDetailsViewRouter()
     
     var cars: [Car] = []

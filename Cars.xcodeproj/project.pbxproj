@@ -10,11 +10,17 @@
 		3F3B8C55237A256000E5A8E1 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C54237A256000E5A8E1 /* CarCell.swift */; };
 		3F3B8C57237A273800E5A8E1 /* CacheImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C56237A273800E5A8E1 /* CacheImageView.swift */; };
 		3F3B8C5A237A2F3B00E5A8E1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B8C59237A2F3B00E5A8E1 /* Colors.xcassets */; };
+		3F3B8C5D237A39D000E5A8E1 /* CarsMapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C5C237A39D000E5A8E1 /* CarsMapPresenterTests.swift */; };
+		3F3B8C60237A3E5D00E5A8E1 /* RouterSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C5F237A3E5D00E5A8E1 /* RouterSpies.swift */; };
+		3F3B8C62237A3E6600E5A8E1 /* ViewSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C61237A3E6600E5A8E1 /* ViewSpies.swift */; };
+		3F3B8C64237A3EBF00E5A8E1 /* SpyRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C63237A3EBF00E5A8E1 /* SpyRouterFactory.swift */; };
+		3F3B8C67237A3F0400E5A8E1 /* CarGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C66237A3F0400E5A8E1 /* CarGatewayStub.swift */; };
+		3F3B8C6A237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C69237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift */; };
+		3F3B8C6C237A3F6300E5A8E1 /* FailureUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */; };
 		3F95027E237A01C600F2AFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95027D237A01C600F2AFFC /* AppDelegate.swift */; };
 		3F950285237A01C600F2AFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F950283237A01C600F2AFFC /* Main.storyboard */; };
 		3F950287237A01C800F2AFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F950286237A01C800F2AFFC /* Assets.xcassets */; };
 		3F95028A237A01C800F2AFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F950288237A01C800F2AFFC /* LaunchScreen.storyboard */; };
-		3F950295237A01C800F2AFFC /* CarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F950294237A01C800F2AFFC /* CarsTests.swift */; };
 		3F9502A0237A01C800F2AFFC /* CarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95029F237A01C800F2AFFC /* CarsUITests.swift */; };
 		3F9502B8237A06E300F2AFFC /* CarsMapViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9502B4237A06E300F2AFFC /* CarsMapViewRouter.swift */; };
 		3F9502B9237A06E300F2AFFC /* CarsMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9502B5237A06E300F2AFFC /* CarsMapPresenter.swift */; };
@@ -65,6 +71,13 @@
 		3F3B8C54237A256000E5A8E1 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		3F3B8C56237A273800E5A8E1 /* CacheImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageView.swift; sourceTree = "<group>"; };
 		3F3B8C59237A2F3B00E5A8E1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3F3B8C5C237A39D000E5A8E1 /* CarsMapPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsMapPresenterTests.swift; sourceTree = "<group>"; };
+		3F3B8C5F237A3E5D00E5A8E1 /* RouterSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSpies.swift; sourceTree = "<group>"; };
+		3F3B8C61237A3E6600E5A8E1 /* ViewSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpies.swift; sourceTree = "<group>"; };
+		3F3B8C63237A3EBF00E5A8E1 /* SpyRouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyRouterFactory.swift; sourceTree = "<group>"; };
+		3F3B8C66237A3F0400E5A8E1 /* CarGatewayStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGatewayStub.swift; sourceTree = "<group>"; };
+		3F3B8C69237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUseCaseFactory.swift; sourceTree = "<group>"; };
+		3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureUseCaseFactory.swift; sourceTree = "<group>"; };
 		3F95027A237A01C600F2AFFC /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95027D237A01C600F2AFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F950284237A01C600F2AFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +85,6 @@
 		3F950289237A01C800F2AFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F95028B237A01C800F2AFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F950290237A01C800F2AFFC /* CarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F950294237A01C800F2AFFC /* CarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTests.swift; sourceTree = "<group>"; };
 		3F950296237A01C800F2AFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F95029B237A01C800F2AFFC /* CarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95029F237A01C800F2AFFC /* CarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsUITests.swift; sourceTree = "<group>"; };
@@ -146,11 +158,31 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		3F3B8C5B237A316900E5A8E1 /* CarsMapTests */ = {
+		3F3B8C5E237A3E4C00E5A8E1 /* Spies */ = {
 			isa = PBXGroup;
 			children = (
+				3F3B8C63237A3EBF00E5A8E1 /* SpyRouterFactory.swift */,
+				3F3B8C61237A3E6600E5A8E1 /* ViewSpies.swift */,
+				3F3B8C5F237A3E5D00E5A8E1 /* RouterSpies.swift */,
 			);
-			path = CarsMapTests;
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		3F3B8C65237A3EFB00E5A8E1 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				3F3B8C66237A3F0400E5A8E1 /* CarGatewayStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		3F3B8C68237A3F2300E5A8E1 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				3F3B8C69237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift */,
+				3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		3F950271237A01C600F2AFFC = {
@@ -189,9 +221,11 @@
 		3F950293237A01C800F2AFFC /* CarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F3B8C5B237A316900E5A8E1 /* CarsMapTests */,
-				3F950294237A01C800F2AFFC /* CarsTests.swift */,
 				3F950296237A01C800F2AFFC /* Info.plist */,
+				3F3B8C68237A3F2300E5A8E1 /* Factories */,
+				3F3B8C65237A3EFB00E5A8E1 /* Stubs */,
+				3F3B8C5E237A3E4C00E5A8E1 /* Spies */,
+				3F3B8C5C237A39D000E5A8E1 /* CarsMapPresenterTests.swift */,
 			);
 			path = CarsTests;
 			sourceTree = "<group>";
@@ -541,7 +575,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F950295237A01C800F2AFFC /* CarsTests.swift in Sources */,
+				3F3B8C5D237A39D000E5A8E1 /* CarsMapPresenterTests.swift in Sources */,
+				3F3B8C67237A3F0400E5A8E1 /* CarGatewayStub.swift in Sources */,
+				3F3B8C62237A3E6600E5A8E1 /* ViewSpies.swift in Sources */,
+				3F3B8C60237A3E5D00E5A8E1 /* RouterSpies.swift in Sources */,
+				3F3B8C6A237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift in Sources */,
+				3F3B8C64237A3EBF00E5A8E1 /* SpyRouterFactory.swift in Sources */,
+				3F3B8C6C237A3F6300E5A8E1 /* FailureUseCaseFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,8 @@ class CacheImageView: UIImageView {
                 return
             }
             
+            self.image = nil
+            
             if let cachedImage = imageCache.object(forKey: imageUrl.absoluteString as NSString) {
                 self.image = cachedImage
             } else {

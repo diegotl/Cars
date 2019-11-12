@@ -20,6 +20,15 @@ class CarsListViewController: UITableViewController, ICarsListView {
         configurator.configure(self)
     }
     
+    // MARK: - UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        dismiss(animated: true) {
+            self.presenter.openItem(at: indexPath.row)
+        }
+    }
+    
     // MARK: - UITableViewDataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

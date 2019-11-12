@@ -15,10 +15,11 @@ protocol ICarsListViewRouter {
 struct CarsListViewRouter: ICarsListViewRouter {
     
     private(set) weak var parent: UIViewController?
+    private(set) weak var delegate: CarsListDelegate?
 
     func present(cars: [Car]) {
         let viewController = Storyboard.main.instantiate(CarsListViewController.self)
-        viewController.configurator = CarsListConfigurator(cars: cars)
+        viewController.configurator = CarsListConfigurator(delegate: delegate, cars: cars)
         parent?.present(viewController, animated: true, completion: nil)
     }
 
