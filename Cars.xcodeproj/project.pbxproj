@@ -17,6 +17,8 @@
 		3F3B8C67237A3F0400E5A8E1 /* CarGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C66237A3F0400E5A8E1 /* CarGatewayStub.swift */; };
 		3F3B8C6A237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C69237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift */; };
 		3F3B8C6C237A3F6300E5A8E1 /* FailureUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */; };
+		3F6000A7237B662A0059E977 /* AttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6000A6237B662A0059E977 /* AttributeCell.swift */; };
+		3F6000A9237B77B30059E977 /* CellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6000A8237B77B30059E977 /* CellInfo.swift */; };
 		3F95027E237A01C600F2AFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95027D237A01C600F2AFFC /* AppDelegate.swift */; };
 		3F950285237A01C600F2AFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F950283237A01C600F2AFFC /* Main.storyboard */; };
 		3F950287237A01C800F2AFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F950286237A01C800F2AFFC /* Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		3F3B8C66237A3F0400E5A8E1 /* CarGatewayStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGatewayStub.swift; sourceTree = "<group>"; };
 		3F3B8C69237A3F3000E5A8E1 /* SuccessUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUseCaseFactory.swift; sourceTree = "<group>"; };
 		3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureUseCaseFactory.swift; sourceTree = "<group>"; };
+		3F6000A6237B662A0059E977 /* AttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeCell.swift; sourceTree = "<group>"; };
+		3F6000A8237B77B30059E977 /* CellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInfo.swift; sourceTree = "<group>"; };
 		3F95027A237A01C600F2AFFC /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95027D237A01C600F2AFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F950284237A01C600F2AFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -183,6 +187,14 @@
 				3F3B8C6B237A3F6300E5A8E1 /* FailureUseCaseFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		3F6000A5237B66040059E977 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3F6000A6237B662A0059E977 /* AttributeCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3F950271237A01C600F2AFFC = {
@@ -347,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				3FB0A1C1237A0A22006EEC6F /* Car.swift */,
+				3F6000A8237B77B30059E977 /* CellInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -398,6 +411,7 @@
 				3FBFC91C237A208A003A5359 /* CarDetailsPresenter.swift */,
 				3FBFC91B237A208A003A5359 /* CarDetailsViewRouter.swift */,
 				3FBFC91E237A208A003A5359 /* CarDetailsConfigurator.swift */,
+				3F6000A5237B66040059E977 /* Cells */,
 			);
 			path = CarDetails;
 			sourceTree = "<group>";
@@ -543,10 +557,12 @@
 				3FBFC920237A208A003A5359 /* CarDetailsPresenter.swift in Sources */,
 				3FB0A1BA237A0910006EEC6F /* Urls.swift in Sources */,
 				3F9502B9237A06E300F2AFFC /* CarsMapPresenter.swift in Sources */,
+				3F6000A9237B77B30059E977 /* CellInfo.swift in Sources */,
 				3FB0A1CA237A0B52006EEC6F /* ListCarsUseCase.swift in Sources */,
 				3FBFC910237A1CDF003A5359 /* CarAnnotation.swift in Sources */,
 				3F95027E237A01C600F2AFFC /* AppDelegate.swift in Sources */,
 				3FB0A1BC237A0924006EEC6F /* Requests.swift in Sources */,
+				3F6000A7237B662A0059E977 /* AttributeCell.swift in Sources */,
 				3FB0A1C2237A0A22006EEC6F /* Car.swift in Sources */,
 				3F9502B8237A06E300F2AFFC /* CarsMapViewRouter.swift in Sources */,
 				3F9502BE237A071C00F2AFFC /* Storyboard.swift in Sources */,

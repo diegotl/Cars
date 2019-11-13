@@ -11,7 +11,7 @@ protocol ICarDetailsView: class {
 }
 
 protocol ICarDetailsPresenter {
-
+    var car: Car { get }
 }
 
 struct CarDetailsPresenter: ICarDetailsPresenter {

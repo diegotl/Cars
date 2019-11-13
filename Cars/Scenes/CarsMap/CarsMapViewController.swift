@@ -16,12 +16,25 @@ class CarsMapViewController: UIViewController, ICarsMapView {
     
     @IBOutlet private weak var spinnerView: UIActivityIndicatorView!
     @IBOutlet private weak var mapView: MKMapView!
+    @IBOutlet private weak var buttonContainerView: UIView!
     
     // MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configure(self)
+        
+        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    private func setupUI() {
+        buttonContainerView.layer.cornerRadius = 12
+        buttonContainerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         presenter.loadCarList()
     }
